@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Соломія | Бронювання столиків</title>
+    <title>Тест голосового AI</title>
     <style>
         body {
             margin: 0;
@@ -11,65 +11,28 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(135deg, #f0f2f5 0%, #e0e6ed 100%);
+            background-color: #f0f2f5;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
         .card {
             background: white;
-            padding: 60px 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
             text-align: center;
-            max-width: 450px;
+            max-width: 400px;
             width: 90%;
-            transition: transform 0.3s ease;
         }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        h1 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 28px; }
-        p { margin: 0 0 40px 0; color: #666; font-size: 17px; line-height: 1.6; }
-        
-        /* === СТИЛІ ДЛЯ КНОПКИ ELEVENLABS === */
-        elevenlabs-convai {
-            display: block;
-            margin: 0 auto;
-        }
-        elevenlabs-convai button {
-            background-color: #007bff; /* Ваш основний синій колір */
-            color: white;
-            border: none;
-            padding: 18px 36px;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 30px;
-            cursor: pointer;
-            box-shadow: 0 4px 14px rgba(0, 123, 255, 0.3);
-            transition: background-color 0.2s ease, box-shadow 0.2s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%; /* Кнопка на всю ширину картки */
-        }
-        elevenlabs-convai button:hover {
-            background-color: #0056b3;
-            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
-        }
-        /* Приховуємо текст-підказку ElevenLabs, якщо він є */
-        elevenlabs-convai span {
-            display: none !important;
-        }
-        /* ==================================== */
+        h1 { margin: 0 0 10px 0; color: #1a1a1a; font-size: 24px; }
+        p { margin: 0 0 30px 0; color: #666; font-size: 16px; line-height: 1.5; }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>Соломія</h1>
-        <p>Для початку розмови натисніть на кнопку та дозвольте браузеру доступ до мікрофона.</p>
+        <h1>Бронювання столиків</h1>
+        <p>Натисніть на кнопку нижче та дозвольте браузеру доступ до мікрофона, щоб почати розмову із Соломією.</p>
         <elevenlabs-convai agent-id="agent_7401kv4ac7gdeh5sxa477whnd8pm"></elevenlabs-convai>
         <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
-    </div>
+        </div>
 </body>
-
 </html>
